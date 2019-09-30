@@ -2,7 +2,7 @@
 Message "train" in Slack channel and triggers Raspberry Pi to ring a train horn. It is written with Node.js.
 
 ## Background
-We have a nice kitchen at work and people try to eat lunch together to bond. The idea is to message a Slack channel, for example `@here, lunch train`. And it triggers our Raspberry Pi to ring a train horn -- we also set up a giphy app so within the Slack channel, a train giphy pops up in response.
+We have a nice kitchen at work and people try to eat lunch together to bond. The idea is to message a Slack channel with a key word `train`, for example `@here, lunch train`, and it triggers our Raspberry Pi to ring a train horn -- we also set up a giphy app so within the Slack channel, a train giphy pops up in response.
 
 ## How To
 1. Clone the repo to your Raspberry Pi and run npm install. This will install all of the dependencies slack-train requires.
