@@ -1,0 +1,11 @@
+{
+    "name": "slack-audiobot",
+    "version": "0.1.0",
+    "description": "A slack audio feedback bot",
+    "dependencies": {
+        "slack-client": "1.4.1",
+        "fs": "",
+        "lame":"1.2.4",
+        "speaker":"0.4.2"    
+    }
+}
