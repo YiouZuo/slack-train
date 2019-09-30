@@ -17,7 +17,7 @@ slack.on('message', function(message) {
             
             var hasTrigger = message.text.indexOf("train"); //search for play trigger
             if(hasTrigger > -1) {
-                fs.createReadStream('sounds/train.mp3') .pipe(new lame.Decoder()) .on('format', function (format) {
+                fs.createReadStream('train.mp3') .pipe(new lame.Decoder()) .on('format', function (format) {
                         this.pipe(new Speaker(format));
                     });
                 }
