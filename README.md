@@ -15,7 +15,7 @@ We have a nice kitchen at work and people try to eat lunch together to bond. The
 You'll need the script to be running for it to actively listen to the Slack channel. There are a few of ways to do it depending on how much availability you desire.
 1. create a screen session 
 
-   This is by no means optimal for us, but if you'd like to have a short time span for Slack-RaspberryPi sound notification, it's quick and easy.
+   This is by no means optimal for us, but if you'd like to have a short time span for Slack-RaspberryPi sound notification, and don't want to keep logging in on Raspberry Pi, it's quick and easy. 
 
 2. cron job with timeout
 
