@@ -11,11 +11,11 @@ slack.on('message', function(message) {
 
     if(message.type === 'message') {
         //get message text
-        var messageText = message.text.toLowerCase();
+        var messageText = message.text;
         
         if(messageText) {
             
-            var hasTrigger = messageText.indexOf("train"); //search for play trigger
+            var hasTrigger = messageText.toLowerCase().indexOf("train"); //search for play trigger
             if(hasTrigger > -1) {
                 fs.createReadStream('train.mp3') .pipe(new lame.Decoder()) .on('format', function (format) {
                         this.pipe(new Speaker(format));
